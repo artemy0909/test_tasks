@@ -36,4 +36,4 @@ if __name__ == '__main__':
             print(bar(i))
         else:
             print(i)
-    print(str(foo("Надеюсь, что все задания понял правильно :)")) + "theless")
+    print(str(foo("Надеюсь, что все задания понял правильно :)"))[:3] + "sense")
