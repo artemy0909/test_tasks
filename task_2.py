@@ -5,12 +5,12 @@ import os
 def uppercase_inside_lowercase(line: str):
     i = 0
     result = []
-    while i < len(line) - 5:
+    while i < len(line) - 2:
         if line[i].islower():
             y = i + 1
-            while line[y].isupper():
+            while y < len(line) and line[y].isupper():
                 y += 1
-                if line[y].islower():
+                if y < len(line) and line[y].islower():
                     result.append((line[i], line[y]))
         i += 1
     return result
